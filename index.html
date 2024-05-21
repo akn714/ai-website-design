@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice AI</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+<body>
+    <div id="root">
+        <div class="sticky-navbar">
+            <section id="navbar">
+                <div class="navbar-profile">
+                    <!-- <img  class="navbar-profile-pic" src="./user-profile.png" alt="" /> -->
+                    <a href='./index.html' style="text-decoration: none" class="title">Choice AI</a>
+                    <button class="burger" onclick=drop_down_the_menu()>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </button>
+                </div>
+                <div class='navbar-links'>
+                    <a href="">About</a>
+                    <a href="">Features</a>
+                    <a href="" style="min-width: 100px;">Contact Me</a>
+                </div>
+            </section>
+        </div>
+        <div class="drop-down-navbar-div">
+            <div class='drop-down-navbar'>
+                <a href="">About</a>
+                <a href="">Features</a>
+                <a href="" style="min-width: 100px;
+                background: white;
+                border-radius: 30px;
+                color: black;
+                height: 55%;
+                margin-bottom: 20px;
+                padding: 0 10px;">Contact Me</a>
+            </div>
+        </div>
+        <section id="main">
+            <div id="hero-sec" class="section">
+                <div class="sec-div">
+                    <div class="hero-main">
+                        <div class="hero-title">
+                            Speak Loudly, Without Saying a Word
+                        </div>
+                        <div class="hero-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, qui? Illo, ea amet error accusantium provident doloribus, earum facilis quia iste voluptates excepturi perspiciatis rerum minima voluptas, quo quis tenetur libero unde.
+                        </div>
+                        <div class="hero-cta">
+                            <div class="cta">
+                                <input type="email" placeholder="name@email.com">
+                                <button>Get notified</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-div"></div>
+            </div>
+            <div class="section" style="background-color: grey;">
+                <div class="sec-div"></div>
+                <div class="sec-div"></div>
+            </div>
+        </section>
+        <section id="footer">
+
+        </section>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+</html>
