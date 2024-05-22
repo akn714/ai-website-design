@@ -1,0 +1,14 @@
+/* #section2{
+    gap: 40px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    padding: 20px;
+} */
+
+#section2 > div{
+    border: 1px solid blue;
+}
+
+

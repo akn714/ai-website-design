@@ -6,10 +6,15 @@
 
 #hero-sec .sec-div:nth-child(1){
     /* background-color: black; */
+    width: 100%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#hero-sec .sec-div:nth-child(1) *{
+    margin: auto;
 }
 
 #hero-sec .sec-div:nth-child(1) .hero-main{
@@ -32,13 +37,20 @@
     font-family: sans-serif;
     height: 50px;
     height: unset;
+    background: -webkit-linear-gradient(225deg, #eee, #333);
+    background: linear-gradient(2005deg, rgb(255, 255, 247) 8.55094%, rgb(114, 114, 103) 107.012%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-desc{
     color: #ffffff71;
     font-size: 17px;
     line-height: 30px;
+    max-width: 600px;
     font-family: sans-serif;
+    max-width: 600px;
+    text-align: center;
 }
 
 .hero-cta a{
@@ -49,6 +61,7 @@
 .cta{
     border: 1px solid #80808073;
     height: 50px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +87,7 @@
     height: 93%;
     width: 40%;
     min-width: 150px;
+    max-width: 170px;
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-radius: 28px;
@@ -87,6 +101,8 @@
     box-shadow: 0px 6px 36px -7px #C2FF2F;
     background: #d7ff23;
     box-shadow: 0px 6px 36px -7px #d7ff23;
+    background: #ddff00;
+    box-shadow: 0px 10px 20px -8px #ddff00;
 }
 
 .get-in-touch{
@@ -158,10 +174,20 @@
     height: 100%;
 }
 
+@media (min-width: 1100px){
+    .hero-title{
+        font-size: 64px;
+        text-align: center;
+        max-width: 800px;
+    }
+}
 
 @media (max-width: 1100px){
     #hero-sec{
         height: 150vh;
+        height: calc(100vh - 100px);
+        /* justify-content: center; */
+        align-items: center;
     }
 
     .hero-title{
@@ -174,11 +200,12 @@
 
     #hero-sec .sec-div:nth-child(1){
         /* padding-top: 30px; */
-        height: 50%;
+        height: 80%;
         /* background-color: grey; */
         /* background-color: red; */
     }
     #hero-sec .sec-div:nth-child(2){
+        display: none;
         height: 50%;
     }
     #hero-sec .sec-div:nth-child(1) .hero-main{
